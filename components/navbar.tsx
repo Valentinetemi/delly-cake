@@ -67,10 +67,10 @@ export default function Navbar() {
               <Button variant="ghost" size="sm">
                 <Menu className="w-6 h-6" />
               </Button>
-            </SheetTrigger>
+            </SheetTrigger>   
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-              <div className="flex flex-col space-y-4 mt-8">
-                <Link href="/" className="flex items-center space-x-2 mb-8">
+              <div className="flex flex-col  space-y-4 mt-8">
+                <Link href="/" className="flex items-center space-x-2 mb-8">  
                   <Heart className="w-6 h-6 text-pink-400" />
                   <span className="text-xl font-bold text-gray-800">Delly Cakes</span>
                 </Link>
@@ -86,15 +86,23 @@ export default function Navbar() {
                   </Link>
                 ))}
 
-                <div className="pt-6 space-y-3">
+                <div className="pt-4 space-y-3">
                   <Button
                     variant="outline"
                     className="w-full border-pink-400 text-pink-600 hover:bg-pink-50 bg-transparent"
                   >
-                    <Phone className="w-4 h-4 mr-2" />
-                    Call Us
+                  <Link
+              href="/contact" className=" items-center flex space-x-4 border-pink-400 text-pink-600 hover:bg-pink-50 bg-transparent">
+              <Phone className="w-2 h-2 mr-2" />
+              Call Us
+              </Link>
                   </Button>
-                  <Button className="w-full bg-pink-400 hover:bg-pink-500 text-white">Order Now</Button>
+                  <Button className="w-full bg-pink-400 hover:bg-pink-500 text-white">
+                    <Link
+                href="/contact" >
+              Order Now
+              </Link>
+                  </Button>
                 </div>
               </div>
             </SheetContent>
