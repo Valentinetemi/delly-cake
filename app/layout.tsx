@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Delly Cakes - Artisanal Cakes & Pastries",
   description:
     "Premium handcrafted cakes and pastries made with love. Custom cakes for weddings, birthdays, and special occasions.",
+    icons: {
+      icon: "/favicon.ico",
+    },
 }
 
 export default function RootLayout({
